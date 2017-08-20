@@ -64,7 +64,14 @@ The following endpoints are offered:
 * /api/v1/entries/<id>
 	* parameters: entry id
 	* methods: DELETE
-	* description: removes an entry from the database
+	* description: remove an entry from the database
+	* accepts: all formats
+	* returns: application/json
+
+* /api/v1/status
+	* parameters: none
+	* methods: GET
+	* description: return "OK" if the application is reachable
 	* accepts: all formats
 	* returns: application/json
 

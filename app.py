@@ -110,6 +110,11 @@ def remove_entry(id):
         return make_response(jsonify(''), 404)
 
 
+@app.route('/api/v1/status', methods=['GET'])
+def status():
+    return make_response(jsonify('OK'), 200)
+
+
 @requestid
 @app.errorhandler(500)
 def internal_error(exception):
