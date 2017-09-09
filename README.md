@@ -6,7 +6,7 @@ of non-trivial applications.
 * Configuration based on environment variables
 * Database-backed entries
 * JSON API
-* States
+* Stateless
 * Support for X-Request-ID header for request tracking
 * Logging with JSON to stdout
 
