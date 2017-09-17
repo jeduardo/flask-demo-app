@@ -84,6 +84,7 @@ def add_entry():
 @app.route('/api/v1/entries/<id>', methods=['POST'])
 def update_entry(id):
     content = request.json
+    # Making sure no one is trying to change an entry's id.
     content.pop('id', None)
     db.session.query(Entry).filter_by(id=id).update(content)
     entry = Entry.query.get(id)
