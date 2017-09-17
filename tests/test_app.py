@@ -9,7 +9,7 @@ class AppTestCase(unittest.TestCase):
 
     def setUp(self):
         os.environ['APP_DATABASE_URI'] = 'sqlite:///:memory:'
-        from app import app
+        from entries import app
         self.client = app.test_client()
         self.client.testing = True
 

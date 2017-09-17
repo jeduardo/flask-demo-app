@@ -7,7 +7,7 @@ import sys
 
 from flask import Flask, request, jsonify, make_response
 from flask_sqlalchemy import SQLAlchemy
-from requestid import requestid, RequestIdFilter
+from entries.requestid import requestid, RequestIdFilter
 
 
 log_level = logging._nameToLevel[os.environ.get('APP_LOG_LEVEL', 'INFO')]
