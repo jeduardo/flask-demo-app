@@ -36,6 +36,9 @@ specified, it will bind to 5000.
 
 The requirements for the application are listed in `requirements.txt`.
 
+The best way to run the application is with `gunicorn`, launching it at its bare minimum
+with `gunicorn entries:app`.
+
 ## API
 
 The following endpoints are offered:
