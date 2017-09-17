@@ -117,9 +117,9 @@ def status():
 
 @requestid
 @app.errorhandler(500)
-def internal_error(exception):
-    app.logger.error(exception)
-    return make_response(jsonify(exception), 500)
+def internal_error(err):
+    app.logger.error(err)
+    return make_response(jsonify(str(err)), 500)
 
 
 if __name__ == "__main__":
