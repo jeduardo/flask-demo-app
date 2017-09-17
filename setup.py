@@ -6,5 +6,6 @@ setup(
    description='Demo application for Flask',
    author='J. Eduardo',
    author_email='j.eduardo@gmail.com',
+   license='MIT',
    packages=['entries']
 )
