@@ -10,7 +10,7 @@ from flask_sqlalchemy import SQLAlchemy
 from requestid import requestid, RequestIdFilter
 
 
-log_level = logging._nameToLevel[os.environ.get('APP_LOG_LEVEL', 'INFO')]
+log_level = getattr(logging, os.environ.get('APP_LOG_LEVEL', 'INFO'))
 # Configure JSON filesystem log handler
 handler = logging.StreamHandler(sys.stdout)
 handler.setFormatter(logmatic.JsonFormatter())
