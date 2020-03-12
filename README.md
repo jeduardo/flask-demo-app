@@ -36,6 +36,9 @@ specified, it will bind to 5000.
 
 The requirements for the application are listed in `requirements.txt`.
 
+A PostgreSQL development package (such as `libpq-dev`) is required for pip to
+compile the `psycopg2` dependency.
+
 ## API
 
 The following endpoints are offered:
