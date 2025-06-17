@@ -3,7 +3,7 @@ Flask==1.0.0
 Flask-SQLAlchemy==2.4.1
 gunicorn==23.0.0
 itsdangerous==0.24
-Jinja2==2.11.3
+Jinja2==3.1.6
 logmatic-python==0.1.7
 MarkupSafe==1.1.1
 pkg-resources==0.0.0
