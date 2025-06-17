@@ -1,7 +1,7 @@
 click==6.7
 Flask==1.0.0
 Flask-SQLAlchemy==2.4.1
-gunicorn==19.7.1
+gunicorn==23.0.0
 itsdangerous==0.24
 Jinja2==2.11.3
 logmatic-python==0.1.7
